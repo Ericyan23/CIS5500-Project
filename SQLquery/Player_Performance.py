@@ -84,3 +84,23 @@ WHERE
 GROUP BY pb.player_name, ps.season, ps.team_abbreviation
 ORDER BY ps.season, avg_points DESC;
 """
+
+# 7. Impact of Player Experience on Performance
+# Analyze how a player's age and experience (season count) affect their performance metrics (points, assists, rebounds, and three-points) across seasons.
+query = """SELECT
+    ps.player_name,
+    ps.season,
+    ps.age,
+    COUNT(DISTINCT ps.season) AS seasons_played,
+    AVG(p.pts) AS avg_points,
+    AVG(p.ast) AS avg_assists,
+    AVG(p.orb + p.drb) AS avg_rebounds,
+    AVG(p."3P" / NULLIF(p."3PA", 0)) AS avg_three_points
+FROM player_seasons ps JOIN player_stats p ON ps.player_name = p.player
+        JOIN game_results g ON p.game_id = g.game_id
+        JOIN player_background pb ON ps.player_name = pb.player_name
+        JOIN shots_made s ON p.game_id = s.game_id
+WHERE p.pts IS NOT NULL AND p.ast IS NOT NULL AND p.orb IS NOT NULL AND p.drb IS NOT NULL AND p."3P" IS NOT NULL AND p."3PA" IS NOT NULL
+GROUP BY ps.player_name, ps.season, ps.age
+ORDER BY seasons_played DESC, avg_points DESC;
+"""
