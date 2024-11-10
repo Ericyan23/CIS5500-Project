@@ -18,7 +18,7 @@ Analyze NBA player and team performance over a decade, focusing on trends from a
 ## Directories Info (Active Updates)
 The structure and contents of the directories are actively updated to reflect ongoing project needs.
 
-1. **preprocessing folder** - Contains scripts for dataset pre-processing and cleaning.
+1. **preprocessing folder** - Contains scripts for completed dataset pre-processing and cleaning.
 2. **HW3 student** - Serves as a template or reference for building the application.
 3. **nba-app** - Contains the core API and frontend code for the application (to be updated as progress)
 
