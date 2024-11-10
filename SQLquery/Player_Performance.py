@@ -20,4 +20,14 @@ WHERE p."3P" IS NOT NULL AND p."3PA" IS NOT NULL
 GROUP BY s.player_name, g.season
 ORDER BY g.season, three_point_percentage DESC;
 """
-
+#3.Free-Throw Percentage
+#Analyze player performance at the free-throw line and compare changes between seasons.
+query = """SELECT p.player, g.season,
+      ROUND(SUM(p.ft) * 1.0 / NULLIF(SUM(p.fta), 0), 2) AS free_throw_percentage
+FROM player_stats p
+JOIN game_results g ON p.game_id = g.game_id
+WHERE p.ft IS NOT NULL AND p.fta IS NOT NULL
+GROUP BY p.player, g.season
+HAVING SUM(p.fta) > 0
+ORDER BY g.season, free_throw_percentage DESC;
+"""
