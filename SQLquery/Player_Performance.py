@@ -20,7 +20,7 @@ WHERE p."3P" IS NOT NULL AND p."3PA" IS NOT NULL
 GROUP BY s.player_name, g.season
 ORDER BY g.season, three_point_percentage DESC;
 """
-#3.Free-Throw Percentage
+#3. Free-Throw Percentage
 #Analyze player performance at the free-throw line and compare changes between seasons.
 query = """SELECT p.player, g.season,
       ROUND(SUM(p.ft) * 1.0 / NULLIF(SUM(p.fta), 0), 2) AS free_throw_percentage
@@ -30,4 +30,36 @@ WHERE p.ft IS NOT NULL AND p.fta IS NOT NULL
 GROUP BY p.player, g.season
 HAVING SUM(p.fta) > 0
 ORDER BY g.season, free_throw_percentage DESC;
+"""
+
+#4. Rebound Statistics, Assist Counts, Steal Totals, Block Counts
+#Evaluate the number of offensive and defensive rebounds, the number of assists, the number of steals, the number of blocks secured by each player across seasons.
+query = """SELECT p.player, g.season,
+      SUM(p.orb) AS offensive_rebounds,
+      SUM(p.drb) AS defensive_rebounds,
+      SUM(p.orb + p.drb) AS total_rebounds,
+      SUM(p.ast) AS total_assists,
+      SUM(p.stl) AS total_steals,
+      SUM(p.blk) AS total_blocks
+FROM player_stats p
+JOIN game_results g ON p.game_id = g.game_id
+WHERE p.orb IS NOT NULL AND p.drb IS NOT NULL AND p.ast IS NOT NULL AND p.stl IS NOT NULL AND p.blk IS NOT NULL
+GROUP BY p.player, g.season
+ORDER BY g.season, total_rebounds DESC, total_assists DESC, total_steals DESC, total_blocks DESC;
+"""
+
+#5. Player Clutch Performance Analysis
+#Evaluate players' clutch performance by analyzing shot accuracy across different court zones in high-stakes game situations (i.e. last quarter of the game)
+query = """WITH player_clutch_shots_perfornace AS (
+   SELECT s.player_name, s.zone_abb, g.season,
+          COUNT(s.shot_id) AS total_shots,
+          SUM(s.shot_made) AS shots_made
+   FROM shots_made s
+   JOIN game_results g ON s.game_id = g.game_id
+   WHERE s.quarter >= 4
+   GROUP BY s.player_name, s.zone_abb, g.season)
+SELECT player_name, zone_abb, season, shots_made, total_shots,
+      ROUND((shots_made * 1.0 / total_shots) * 100, 2) AS clutch_shot_percentage
+FROM player_clutch_shots_perfornace
+ORDER BY season, player_name, zone_abb;
 """
