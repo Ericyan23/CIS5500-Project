@@ -33,7 +33,7 @@ ORDER BY g.season, free_throw_percentage DESC;
 """
 
 #4. Rebound Statistics, Assist Counts, Steal Totals, Block Counts
-#Evaluate the number of offensive and defensive rebounds, the number of assists, the number of steals, the number of blocks secured by each player across seasons.
+# Evaluate the number of offensive and defensive rebounds, the number of assists, the number of steals, the number of blocks secured by each player across seasons.
 query = """SELECT p.player, g.season,
       SUM(p.orb) AS offensive_rebounds,
       SUM(p.drb) AS defensive_rebounds,
@@ -49,7 +49,7 @@ ORDER BY g.season, total_rebounds DESC, total_assists DESC, total_steals DESC, t
 """
 
 #5. Player Clutch Performance Analysis
-#Evaluate players' clutch performance by analyzing shot accuracy across different court zones in high-stakes game situations (i.e. last quarter of the game)
+# Evaluate players' clutch performance by analyzing shot accuracy across different court zones in high-stakes game situations (i.e. last quarter of the game)
 query = """WITH player_clutch_shots_perfornace AS (
    SELECT s.player_name, s.zone_abb, g.season,
           COUNT(s.shot_id) AS total_shots,
@@ -62,4 +62,25 @@ SELECT player_name, zone_abb, season, shots_made, total_shots,
       ROUND((shots_made * 1.0 / total_shots) * 100, 2) AS clutch_shot_percentage
 FROM player_clutch_shots_perfornace
 ORDER BY season, player_name, zone_abb;
+"""
+
+#6. Player's Contribution to Team Wins Across Seasons (> 15s)
+# Calculate each player's average points, assists, and rebounds in games where their team won, showing how they contributed to their team's success across different seasons.
+query = """SELECT
+  pb.player_name,
+  ps.season,
+  ps.team_abbreviation,
+  ROUND(AVG(p.pts), 2) AS avg_points,
+  ROUND(AVG(p.ast), 2) AS avg_assists,
+  ROUND(AVG(p.orb + p.drb), 2) AS avg_rebounds
+FROM player_background pb 
+JOIN player_seasons ps ON pb.player_name = ps.player_name
+JOIN player_stats p ON ps.player_name = p.player
+JOIN game_results g ON p.game_id = g.game_id
+JOIN shots_made s ON p.game_id = s.game_id AND p.player = s.player_name
+WHERE
+  (g.home_team = ps.team_abbreviation AND g.home_score > g.away_score) OR
+  (g.away_team = ps.team_abbreviation AND g.away_score > g.home_score)
+GROUP BY pb.player_name, ps.season, ps.team_abbreviation
+ORDER BY ps.season, avg_points DESC;
 """
