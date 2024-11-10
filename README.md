@@ -14,3 +14,9 @@ Analyze NBA player and team performance for the 2023 and 2024 seasons. This plat
 3. **Roster Impact** - Study shot distribution before/after trades.
 4. **Clutch Performance** - Compare late-game shooting improvements.
 5. **Shot Selection by Position** - Assess shot trends by player positions.
+
+## Directories Info (Active Updates)
+The structure and contents of the directories are actively updated to reflect ongoing project needs.
+
+1. **preprocessing folder** - Contains scripts for dataset pre-processing and cleaning.
+
