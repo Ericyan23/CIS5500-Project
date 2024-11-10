@@ -1,6 +1,6 @@
 # NBA Performance Insights Platform
 
-Analyze NBA player and team performance for the 2023 and 2024 seasons. This platform provides insights on shooting trends, player development, and team strategy shifts, serving NBA fans and team managers alike.
+Analyze NBA player and team performance over a decade, focusing on trends from around 2013 to 2023. This platform offers insights into shooting patterns, player development, and evolving team strategies, serving both NBA fans and team managers alike.
 
 ## Team Members
 - **Junyang Wang** - [Navyfish67](https://github.com/Navyfish67)
