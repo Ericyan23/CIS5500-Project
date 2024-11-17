@@ -13,7 +13,6 @@ router.get('/', async (req, res) => {
     }
 });
 
-
 // Get player by name
 router.get('/:name', async (req, res) => {
     try {
@@ -29,50 +28,20 @@ router.get('/:name', async (req, res) => {
     }
 });
 
+// Get player stats
+router.get('/stats/:name', async (req, res) => {
+    try {
+        const { name } = req.params;
+        const result = await db.query(
+            'SELECT team, pts, ast, drb, orb FROM player_stats WHERE player = $1',
+            [name]
+        );
+        res.json(result.rows);
+    } catch (err) {
+        console.error('Error fetching player stats:', err.message);
+        res.status(500).send('Server Error');
+    }
+});
+
+
 module.exports = router;
-
-// Get player stats
-router.get('/stats/:name', async (req, res) => {
-    try {
-        const { name } = req.params;
-        const result = await db.query(
-            'SELECT * FROM player_stats WHERE player = $1',
-            [name]
-        );
-        res.json(result.rows);
-    } catch (err) {
-        console.error('Error fetching player stats:', err.message);
-        res.status(500).send('Server Error');
-    }
-});
-
-// Get player stats
-router.get('/stats/:name', async (req, res) => {
-    try {
-        const { name } = req.params;
-        const result = await db.query(
-            'SELECT season, team, pts, ast, drb, orb FROM player_stats WHERE player = $1',
-            [name]
-        );
-        res.json(result.rows);
-    } catch (err) {
-        console.error('Error fetching player stats:', err.message);
-        res.status(500).send('Server Error');
-    }
-});
-
-// Get player stats
-router.get('/stats/:name', async (req, res) => {
-    try {
-        const { name } = req.params;
-        const result = await db.query(
-            'SELECT season, team, pts, ast, drb, orb FROM player_stats WHERE player = $1',
-            [name]
-        );
-        res.json(result.rows);
-    } catch (err) {
-        console.error('Error fetching player stats:', err.message);
-        res.status(500).send('Server Error');
-    }
-});
-
