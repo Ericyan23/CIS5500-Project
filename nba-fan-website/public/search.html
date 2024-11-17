@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Players - NBA Fan Website</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<!-- Navigation Menu -->
+<!-- (Same as in index.html) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">NBA Fan Website</a>
+  <!-- ... rest of the navbar ... -->
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-4">
+  <h1>Search Players</h1>
+  <form id="search-form">
+    <div class="form-group">
+      <label for="player-name">Player Name</label>
+      <input type="text" class="form-control" id="player-name" placeholder="Enter player name"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+
+  <!-- Search Results -->
+  <div id="search-results" class="mt-4"></div>
+</div>
+
+<!-- Include jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+    padding-top: 56px;
+}
+
+h1, h2 {
+    margin-top: 20px;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.card {
+    text-align: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
