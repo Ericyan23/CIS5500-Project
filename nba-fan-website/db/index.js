@@ -14,7 +14,7 @@ const pool = new Pool({
     port: rds_port,
     user: rds_user,
     password: rds_password,
-    database: rds_db, // Should be 'postgres'
+    database: rds_db,
     ssl: {
         rejectUnauthorized: false,
     },

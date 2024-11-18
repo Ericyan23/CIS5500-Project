@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NBA Fan Website</title>
+    <title>NBA Fan Website - Clutch Performance</title>
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
@@ -16,7 +16,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
@@ -28,43 +28,41 @@
                 <li class="nav-item">
                     <a class="nav-link" href="top-shooters.html">Top Shooters</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="clutch_performance.html">Player Clutch Performance</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="clutch_performance.html">Clutch Performance</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Main Content -->
+    <!-- Clutch Performance Section -->
     <div class="container mt-4">
-        <h1>Welcome to the NBA Fan Website!</h1>
-        <p>Stay updated with the latest NBA player stats, team info, and game results.</p>
-        <h1>Recent Game Results (2021 - 2023-2024 Seasons)</h1>
+        <h1>Clutch Performance by Player</h1>
+        <p>View clutch performance statistics by season.</p>
 
-        <!-- Table for displaying game results -->
-        <table class="table table-striped" id="game-results-table">
+        <!-- Season Filter Dropdown -->
+        <label for="season-select">Select Season:</label>
+        <select id="season-select" class="form-control mb-3" onchange="loadClutchPerformance()">
+            <!-- Options will be populated dynamically -->
+        </select>
+
+        <!-- Table for displaying clutch performance data -->
+        <table class="table table-striped" id="clutch-performance-table">
             <thead>
                 <tr>
-                    <th>Date</th>
+                    <th>Player Name</th>
+                    <th>Zone</th>
                     <th>Season</th>
-                    <th>Home Team</th>
-                    <th>Away Team</th>
-                    <th>Home Score</th>
-                    <th>Away Score</th>
+                    <th>Shots Made</th>
+                    <th>Total Shots</th>
+                    <th>Clutch Shot %</th>
                 </tr>
             </thead>
             <tbody></tbody>
         </table>
-
-        <!-- Pagination buttons -->
-        <div class="pagination">
-            <button id="prev-page" class="btn btn-primary" disabled>Previous</button>
-            <button id="next-page" class="btn btn-primary">Next</button>
-        </div>
     </div>
 
-    <!-- Include jQuery and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="js/main.js"></script> <!-- This will handle data fetching and pagination -->
+    <!-- JavaScript to fetch and display data -->
+    <script src="js/clutch_performance.js"></script>
 </body>
 </html>
