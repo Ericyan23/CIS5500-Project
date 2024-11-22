@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Performance</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">NBA Fan Website</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/playerPerformance.html">Players Performance</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Player Performance Data</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Player Name</th>
+                    <th>Season</th>
+                    <th>College</th>
+                    <th>Country</th>
+                    <th>Total Points</th>
+                    <th>Avg Points/Game</th>
+                    <th>FG %</th>
+                    <th>3PT %</th>
+                    <th>Games Played</th>
+                    <th>Total Shots Made</th>
+                    <th>Avg Shot Distance</th>
+                </tr>
+            </thead>
+            <tbody id="player-data">
+                <!-- Rows will be dynamically injected -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/playerPerformance.js"></script>
+</body>
+</html>
