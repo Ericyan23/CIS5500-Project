@@ -1,68 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>NBA Fan Website - Clutch Performance</title>
-    <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Clutch Performance</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">NBA Fan Website</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="search.html">Search Players</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="teams.html">Teams</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="top-shooters.html">Top Shooters</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="clutch_performance.html">Clutch Performance</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Clutch Performance Section -->
-    <div class="container mt-4">
-        <h1>Clutch Performance by Player</h1>
-        <p>View clutch performance statistics by season.</p>
-
-        <!-- Season Filter Dropdown -->
-        <label for="season-select">Select Season:</label>
-        <select id="season-select" class="form-control mb-3" onchange="loadClutchPerformance()">
-            <!-- Options will be populated dynamically -->
-        </select>
-
-        <!-- Table for displaying clutch performance data -->
-        <table class="table table-striped" id="clutch-performance-table">
-            <thead>
-                <tr>
-                    <th>Player Name</th>
-                    <th>Zone</th>
-                    <th>Season</th>
-                    <th>Shots Made</th>
-                    <th>Total Shots</th>
-                    <th>Clutch Shot %</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+<!-- Main Content -->
+<div class="container mt-4">
+  <h1>Player Clutch Performance</h1>
+  <form id="clutch-form">
+    <div class="form-group">
+      <label for="season-select">Select Season</label>
+      <select class="form-control" id="seasonSelect"></select>
+      <button type="submit" id="fetchData" class="btn btn-primary">Fetch Performance</button>
+        <!-- Options populated dynamically -->
+      </select>
     </div>
+  </form>
 
-    <!-- JavaScript to fetch and display data -->
-    <script src="js/clutch_performance.js"></script>
+  <!-- Results Table -->
+  <div class="mt-4">
+    <table class="table table-striped" id="clutch-performance-table">
+      <thead>
+        <tr>
+          <th>Player Name</th>
+          <th>Zone</th>
+          <th>Season</th>
+          <th>Shots Made</th>
+          <th>Total Shots</th>
+          <th>Clutch Shot %</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data populated dynamically -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Include jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="js/clutch.js"></script>
 </body>
 </html>

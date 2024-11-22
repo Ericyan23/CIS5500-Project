@@ -5,12 +5,16 @@ const db = require('../db');
 router.get('/top-shooters', async (req, res) => {
     try {
         const query = `
+            WITH filtered_player_stats AS (
+            SELECT game_id, SUM("3P") AS total_3P, SUM("3PA") AS total_3PA
+            FROM player_stats
+            WHERE "3P" IS NOT NULL AND "3PA" IS NOT NULL
+            GROUP BY game_id)
             SELECT s.player_name, g.season,
-                ROUND((SUM(p."3P") * 1.0 / NULLIF(SUM(p."3PA"), 0)) * 100, 2) AS three_point_percentage
+            ROUND((SUM(fp.total_3P) * 1.0 / NULLIF(SUM(fp.total_3PA), 0)) * 100, 2) AS three_point_percentage
             FROM shots_made s
-            JOIN player_stats p ON s.game_id = p.game_id
+            JOIN filtered_player_stats fp ON s.game_id = fp.game_id
             JOIN game_results g ON s.game_id = g.game_id
-            WHERE p."3P" IS NOT NULL AND p."3PA" IS NOT NULL
             GROUP BY s.player_name, g.season
             ORDER BY three_point_percentage DESC
             LIMIT 10;
