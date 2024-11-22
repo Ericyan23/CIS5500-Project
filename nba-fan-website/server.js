@@ -14,11 +14,12 @@ const gamesRouter = require('./routes/games');
 const shootersRouter = require('./routes/shooters');
 const playersPerformanceRouter = require('./routes/playersPerformance');
 
+app.use(express.static('public'));
 app.use('/api/shooters', shootersRouter);
 app.use('/api/players', playersRouter);
 app.use('/api/teams', teamsRouter);
 app.use('/api/games', gamesRouter);
-app.use('/api/playersPerformance', playersPerformanceRouter); // 修复这里
+app.use('/api/playersPerformance', playersPerformanceRouter);
 
 // Start Server
 const PORT = process.env.PORT || 8080;
