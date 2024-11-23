@@ -9,7 +9,6 @@ app.use(express.static('public'));
 
 // Routes
 const playersRouter = require('./routes/players');
-const gamesRouter = require('./routes/games');
 const shootersRouter = require('./routes/shooters');
 const playersPerformanceRouter = require('./routes/playersPerformance');
 const gameResultsRouter = require('./routes/game_results');
@@ -21,7 +20,6 @@ app.use('/api/game-results', gameResultsRouter);
 app.use('/api/shooters', shootersRouter);
 app.use('/api/players', playersRouter);
 app.use('/api/clutch-performance', clutchPerformanceRouter);
-app.use('/api/games', gamesRouter);
 app.use('/api/playersPerformance', playersPerformanceRouter);
 
 // Start Server
