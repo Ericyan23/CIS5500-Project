@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> - Shot Performance NBA Fan Website</title>
+    <title>Shot Performance by Shot Zone</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/styles.css"/> <!-- Link to external CSS -->
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -11,25 +11,48 @@
 </nav>
 
 <div class="container mt-4">
-    <h1>Shot Performance by shot zone</h1>
+    <h1>Shot Performance by Shot Zone</h1>
+    
+    <!-- Instructional message -->
+    <p class="text-muted">Click the search directly if you want to see the full information.</p>
+    
+    <form id="search-form" class="mb-4">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="nameInput" class="form-label">Player Name</label>
+                <input type="text" id="nameInput" class="form-control" placeholder="Enter player name">
+            </div>
+            <div class="col-md-4">
+                <label for="seasonSelect" class="form-label">Season</label>
+                <select id="seasonSelect" class="form-select">
+                    <option value="">All Seasons</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="zoneSelect" class="form-label">Zone</label>
+                <select id="zoneSelect" class="form-select">
+                    <option value="">All Zones</option>
+                </select>
+            </div>
+        </div>
+        <button id="search-button" type="button" class="btn btn-primary mt-3">Search</button>
+    </form>
+
     <table class="table table-striped" id="shot-zone-table">
         <thead>
-        <tr>
-            <th>Player Name</th>
-            <th>Season</th>
-            <th>Zone</th>
-            <th>Total Shots</th>
-            <th>Shooting Percentage</th>
-
-        </tr>
+            <tr>
+                <th>Player Name</th>
+                <th>Season</th>
+                <th>Zone</th>
+                <th>Total Shots</th>
+                <th>Shooting Percentage</th>
+            </tr>
         </thead>
         <tbody>
-        <!-- Data will be populated here -->
         </tbody>
     </table>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="js/shooters.js"></script>
+<script src="js/shooters.js"></script> <!-- Link to external JS -->
 </body>
 </html>
