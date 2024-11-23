@@ -55,6 +55,11 @@ router.get('/', async (req, res) => {
                     pb.country,
                     SUM(ps.pts) AS total_points,
                     AVG(ps.pts) AS avg_points_per_game,
+                    SUM(ps.orb) AS offensive_rebounds,
+                    SUM(ps.drb) AS defensive_rebounds,
+                    SUM(ps.ast) AS total_assists,
+                    SUM(ps.stl) AS total_steals,
+                    SUM(ps.blk) AS total_blocks,
                     CASE
                         WHEN SUM(ps.fga) > 0 THEN SUM(ps.fg) / SUM(ps.fga)
                         ELSE 0
@@ -63,6 +68,10 @@ router.get('/', async (req, res) => {
                         WHEN SUM(ps."3PA") > 0 THEN SUM(ps."3P") / SUM(ps."3PA")
                         ELSE 0
                     END AS three_pt_percentage,
+                    CASE
+                        WHEN SUM(ps.fta) > 0 THEN SUM(ps.ft) * 1.0 / SUM(ps.fta)
+                        ELSE 0
+                    END AS free_throw_percentage,
                     COUNT(DISTINCT gr.game_id) AS games_played,
                     COUNT(DISTINCT sm.shot_id) AS total_shots_made,
                     AVG(sm.shot_distance) AS avg_shot_distance

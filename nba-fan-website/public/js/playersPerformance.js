@@ -18,8 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     <td>${player.country || 'N/A'}</td>
                     <td>${parseFloat(player.total_points || 0).toLocaleString()}</td>
                     <td>${parseFloat(player.avg_points_per_game || 0).toFixed(2)}</td>
+                    <td>${parseFloat(player.offensive_rebounds || 0).toFixed(2)}</td>
+                    <td>${parseFloat(player.defensive_rebounds || 0).toFixed(2)}</td>
+                    <td>${parseFloat(player.total_assists || 0).toFixed(2)}</td>
+                    <td>${parseFloat(player.total_steals || 0).toFixed(2)}</td>
+                    <td>${parseFloat(player.total_blocks || 0).toFixed(2)}</td>
                     <td>${(parseFloat(player.fg_percentage || 0) * 100).toFixed(2)}%</td>
                     <td>${(parseFloat(player.three_pt_percentage || 0) * 100).toFixed(2)}%</td>
+                    <td>${(parseFloat(player.free_throw_percentage || 0) * 100).toFixed(2)}%</td>
                     <td>${player.games_played || 0}</td>
                     <td>${player.total_shots_made || 0}</td>
                     <td>${parseFloat(player.avg_shot_distance || 0).toFixed(2)}</td>
