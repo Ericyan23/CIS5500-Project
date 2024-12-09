@@ -29,6 +29,41 @@ FROM team_percentages
 ORDER BY team, season;
 """
 
+#Optimization: 
+
+#Add indexs
+add = """CREATE INDEX idx_game_id ON shots_made(game_id);
+CREATE INDEX idx_team_season ON player_stats(team, game_id);
+CREATE INDEX idx_season ON game_results(game_id, season);
+"""
+
+#Create materialized view
+view = """CREATE MATERIALIZED VIEW team_shots_mv AS
+SELECT ps.team, gr.season,
+       SUM(CASE WHEN sm.shot_type = '3PT Field Goal' THEN 1 ELSE 0 END) AS three_points_attempted,
+       COUNT(sm.shot_id) AS total_shots
+FROM player_stats ps
+         JOIN shots_made sm ON ps.game_id = sm.game_id
+         JOIN game_results gr ON ps.game_id = gr.game_id
+GROUP BY ps.team, gr.season;
+"""
+
+query = """WITH team_average AS (
+    SELECT team, season,
+           ROUND(AVG(three_points_attempted), 2) AS avg_3pt_per_game,
+           ROUND(AVG(total_shots), 2) AS avg_total_shots_per_game
+    FROM team_shots_mv
+    GROUP BY team, season
+),
+     team_percentages AS (
+         SELECT team, season,
+                ((avg_3pt_per_game / NULLIF(avg_total_shots_per_game, 0)) * 100) AS three_pt_percentages
+         FROM team_average
+     )
+SELECT team, season, three_pt_percentages
+FROM team_percentages
+ORDER BY team, season;
+"""
 #2. Game Outcomes and Results Summaries:
 
 #Generate summaries of each team’s home performance across seasons, including wins, losses, and average scores
