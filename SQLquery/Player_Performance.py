@@ -84,6 +84,54 @@ WHERE
 GROUP BY pb.player_name, ps.season, ps.team_abbreviation
 ORDER BY ps.season, avg_points DESC;
 """
+#Optimization
+query = """WITH player_performance AS (
+  SELECT
+    ps.player_name,
+    ps.season,
+    ps.team_abbreviation,
+    p.game_id,
+    COALESCE(p.pts, 0) AS pts,
+    COALESCE(p.ast, 0) AS ast,
+    COALESCE(p.orb, 0) + COALESCE(p.drb, 0) AS total_rebounds
+  FROM player_seasons ps
+  JOIN player_stats p ON ps.player_name = p.player
+),
+winning_games AS (
+  SELECT
+    game_id,
+    home_team,
+    away_team,
+    home_score,
+    away_score,
+    CASE WHEN home_score > away_score THEN home_team ELSE away_team END AS winning_team
+  FROM game_results
+),
+player_wins AS (
+  SELECT
+    pp.player_name,
+    pp.season,
+    pp.team_abbreviation,
+    pp.pts,
+    pp.ast,
+    pp.total_rebounds
+  FROM player_performance pp
+  JOIN winning_games wg
+  ON pp.team_abbreviation = wg.winning_team
+  AND pp.game_id = wg.game_id
+)
+SELECT
+  pw.player_name,
+  pw.season,
+  pw.team_abbreviation,
+  ROUND(AVG(pw.pts), 2) AS avg_points,
+  ROUND(AVG(pw.ast), 2) AS avg_assists,
+  ROUND(AVG(pw.total_rebounds), 2) AS avg_rebounds
+FROM player_wins pw
+GROUP BY pw.player_name, pw.season, pw.team_abbreviation
+ORDER BY pw.season, avg_points DESC;
+"""
+
 
 # 7. Impact of Player Experience on Performance
 # Analyze how a player's age and experience (season count) affect their performance metrics (points, assists, rebounds, and three-points) across seasons.
