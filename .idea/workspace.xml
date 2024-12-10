@@ -5,371 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bce90b63-0bef-4270-b630-17e7bbb86a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/CIS5500-Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/AJ-Green.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/AJ-Griffin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/AJ-Lawson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Aaron-Gordon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Aaron-Nesmith.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Adam-Flagler.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Al-Horford.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Aleksej-Pokusevski.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Alex-Caruso.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Alex-Fudge.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Alperin-Sengun.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Amen-Thompson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Amir-Coffey.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Andre-Jackson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Andrew-Funk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Andrew-Nembhard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Andrew-Wiggins.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Anfernee-Simons.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Anthony-Black.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Anthony-Davis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Anthony-Edwards.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Ausar-Thompson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Austin-Reaves.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Ayo-Dosunmu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Bam-Adebayo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Ben-Sheppard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Ben-Simmons.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Bennedict-Mathurin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Bilal-Coulibaly.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Blake-Wesley.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Bobby-Portis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Bogdan-Bogdanovic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Bojan-Bogdanovic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Bones-Hyland.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Bradley-Beal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Brandan-Ingram.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Brandin-Podziemski.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Brandon-Clarke.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Brandon-Miller.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Brice-Sensabaugh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Brook-Lopez.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Bruce-Brown.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Bruno-Fernando.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Bryce-McGowens.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/CJ-McCollum.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Cade-Cunningham.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Caleb-Houstan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Cam-Reddish.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Cam-Thomas.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Cam-Whitmore.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Cameron-Johnson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Caris-Levert.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Cason-Wallace.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Charles-Bassey.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Chet-Holmgren.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Chris-Boucher.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Chris-Duarte.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Chris-Livingston.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Christian-Braun.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Christian-Wood.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Clint-Ndumbacapela.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Coby-White.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Cody-Martin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Cody-Williams.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Colby-Jones.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Cole-Anthony.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Collin-Gillespie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Collin-Sexton.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Corey-Kispert.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Craig-Porter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/DJ-Carton.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dalano-Banton.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dalen-Terry.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dalton-Knecht.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Damian-Lillard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dangelo-Russell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Daniel-Gafford.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dante-Exum.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dariq-Whitehead.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Darius-Bazley.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Darius-Garland.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/David-Roddy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Davion-Mitchell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Davis-Bertans.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dayron-Sharpe.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Deaaron-Fox.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dean-Wade.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Deandre-Ayton.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Deandre-Hunter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dejounte-Murray.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Deni-Avdija.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dennis-Schroder.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dereck-Lively.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Derrick-Rose.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Derrick-White.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Desmond-Bane.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Devin-Booker.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Devin-Vassell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Devonte-Graham.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dillon-Brooks.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Domantas-Sabonis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Donovan-Mitchell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Donte-Divincenzo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dorian-Finneysmith.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Draymond-Green.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dru-Smith.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Duncan-Robinson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Duop-Reath.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dwight-Powell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Dyson-Daniels.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/EJ-Liddell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Eugene-Omoruyi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Evan-Mobley.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Franz-Wagner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Fred-Vanvleet.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/GG-Jackson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Gabe-Vincent.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Garrison-Mathews.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Gary-Payton.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/George-Niang.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Giannis-Antetokounmpo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Gradey-Dick.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Grant-Williams.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Grayson-Allen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Gui-Dossantos.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Harrison-Barnes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Herb-Jones.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Hunter-Tyson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Isaiah-Collier.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Isaiah-Jackson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Isaiah-Stewart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Ivica-Zubac.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Ja-Morant.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jabari-Smith.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jabari-Walker.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jaden-Hardy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jaden-Ivey.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jaden-Mcdaniels.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jaden-Springer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jaesean-Tate.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jaime-Jaquez.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jake-Laravia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jakob-Poeltl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jalen-Bridges.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jalen-Brunson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jalen-Duren.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jalen-Green.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jalen-Hoodschifino.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jalen-Johnson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jalen-McDaniels.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jalen-Pickett.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jalen-Suggs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jalen-Williams.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jalen-Wilson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jamal-Murray.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jamaree-Bouyea.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jarace-Walker.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jared-Butler.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jaren-Jackson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jarred-Vanderbilt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jarrett-Allen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jason-Preston.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Javon-Freemanliberty.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jaxson-Hayes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jaylen-Brown.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jaylen-Clark.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jaylen-Martin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jaylin-Galloyway.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jaylin-Williams.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jayson-Tatum.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jeff-Green.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jerami-Grant.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jeremiah-Robinsonearl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jeremy-Sochan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jericho-Sims.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jett-Howard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jevon-Carter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jimmy-Butler.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jock-Landale.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Joel-Embiid.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/John-Collins.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/John-Konchar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Johnny-Davis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jonathan-Isaac.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jonathan-Kuminga.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jordan-Clarkson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jordan-Hawkins.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jordan-Miller.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jordan-Poole.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jordan-Walsh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jose-Alvarado.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Josh-Giddey.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Josh-Green.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Josh-Hart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Josh-Minott.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Josh-Richardson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jrue-Holiday.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Julian-Champaignie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Julian-Phillips.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Julian-Strawther.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Julius-Randle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Justin-Champagnie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Justin-Minaya.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Jusuf-Nurkic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Karlanthony-Towns.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kawhi-Leonard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Keegan-Murray.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Keita-Batesdiop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Keldon-Johnson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kelel-Ware.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kelly-Olynyk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kendall-Brown.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kenneth-Lofton.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kenrich-Williams.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Keon-Ellis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Keshad-Johnson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kevin-Durant.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kevin-Huerter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kevon-Looney.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Keyonte-George.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Khris-Middleton.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kobe-Brown.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kobe-Bufkin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kris-Murray.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kristaps-Porzingis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kyle-Kuzma.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Kyrie-Irving.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Lamelo-Ball.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Landry-Shamet.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Larry-Nance.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Lauri-Markkanen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Leaky-Black.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Leonard-Miller.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Lindy-Waters.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Lonzo-Ball.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Lu-Dort.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Luka-Doncic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Luka-Kornet.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Malaki-Branham.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Malcolm-Brogdon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Malcolm-Hill.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Mamadi-Diakite.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Marcus-Sasser.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Marcus-Smart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Marjon-Beauchamp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Mark-Williams.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Marques-Bolden.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Marvin-Bagley.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Mason-Jones.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Matisse-Thybulle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Matt-Ryan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Max-Strus.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Maxi-Kleber.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Maxwell-Lewis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Michael-Porter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Mikal-Bridges.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Mike-Conley.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Miles-McBridge.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Mitchell-Robinson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Moses-Moody.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Mouhamed-Gueye.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Myles-Turner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Nassir-Little.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Naz-Reid.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Nick-Richards.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Nick-Smith.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Nick-Walker.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Nikola-Jokic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Nikola-Jovic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Nikola-Vucevic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Noah-Clowney.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Norman-Powell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Ochai-Agbaji.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/OlivierMaxence-Prosper.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Onuralp-Bitim.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Onyeka-Okongwu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Orlando-Robinson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Ousmane-Dieng.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/PJ-Tucker.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/PJ-Washington.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Paolo-Banchero.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Pat-Connaughton.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Pat-Spencer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Patrick-Baldwin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Paul-Reed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Payton-Pritchard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Peyton-Watson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Quintin-Grimes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/RJ-Barrett.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Raiquan-Gray.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Rayan-Rupert.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Reed-Sheppard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Reggie-Jackson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Richaun-Holmes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Ricky-Council.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Robert-Williams.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Rudy-Gobert.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Rui-Hachimura.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Russell-Westbrook.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Ryan-Dunn.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Ryan-Rollins.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Sam-Hauser.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Sam-Merrill.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Santi-Aldama.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Sasha-Vezenkov.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Scoot-Henderson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Scottie-Barnes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Scotty-Pippen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Shaedon-Sharpe.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Shai-Gilgeousalexander.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Sidy-Cissoko.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Stephen-Curry.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Stephon-Castle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Steven-Adams.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/TJ-McConnell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Tari-Eason.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Taylor-Hendricks.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Terrance-Mann.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Terry-Rozier.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Tim-Hardaway.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Torrey-Craig.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Tosan-Evbuomwan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Toumani-Camara.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Trae-Young.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Trayce-Jacksondavis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Tre-Jones.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Tre-Mann.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Trey-Jemison.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Trey-Lyles.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Trey-Murphy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Ty-Jerome.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Tyler-Herro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Tyrese-Haliburton.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Vasilije-Micic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Victor-Wembanayma.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Vince-Williams.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Walker-Kessler.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Wendell-Carter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Wendell-Moore.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Xavier-Tillman.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Zach-Collins.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Zach-Lavine.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Zeke-Nnaji.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Ziaire-Williams.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Zion-Williamson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/images/players/Zyon-Pullin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/js/playerSearch.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nba-fan-website/public/player-search.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nba-fan-website/routes/playersSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nba-fan-website/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nba-fan-website/public/clutch_performance.html" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/public/clutch_performance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nba-fan-website/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nba-fan-website/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nba-fan-website/public/js/playersPerformance.js" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/public/js/playersPerformance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nba-fan-website/public/player.html" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/public/player.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nba-fan-website/public/playerPerformance.html" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/public/playerPerformance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nba-fan-website/public/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/backup/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nba-fan-website/public/shot.html" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/public/shot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nba-fan-website/public/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/public/team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nba-fan-website/public/top-shooters.html" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/public/top-shooters.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nba-fan-website/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -380,32 +19,46 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Navyfish67"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Navyfish67&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Ericyan23/CIS5500-Project.git",
-    "accountId": "1e96a082-f64f-4c0d-ab96-4b5c731df27f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ericyan23/CIS5500-Project.git&quot;,
+    &quot;accountId&quot;: &quot;1e96a082-f64f-4c0d-ab96-4b5c731df27f&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2q2lbH61Q6OBQxuxfwlG3jsvUqj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "Merging merge",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "git-widget-placeholder": "merge",
+    "last_opened_file_path": "/Users/navyfish/Desktop/CIS5500-Project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nba-fan-website/public" />
+      <recent name="$PROJECT_DIR$/nba-fan-website/routes" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -422,6 +75,9 @@
       <option name="presentableId" value="Default" />
       <updated>1733868620367</updated>
       <workItem from="1733868621408" duration="327000" />
+      <workItem from="1733868949364" duration="241000" />
+      <workItem from="1733869191371" duration="170000" />
+      <workItem from="1733869371191" duration="1576000" />
     </task>
     <servers />
   </component>
