@@ -7,28 +7,20 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
         })
         .then(players => {
-            console.log('Fetched players data:', players); 
+            console.log('Fetched players data:', players);
             const tableBody = document.querySelector('#player-data');
             players.forEach(player => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td>${player.player_name}</td>
                     <td>${player.season}</td>
-                    <td>${player.college || 'N/A'}</td>
-                    <td>${player.country || 'N/A'}</td>
-                    <td>${parseFloat(player.total_points || 0).toLocaleString()}</td>
-                    <td>${parseFloat(player.avg_points_per_game || 0).toFixed(2)}</td>
-                    <td>${parseFloat(player.offensive_rebounds || 0).toFixed(2)}</td>
-                    <td>${parseFloat(player.defensive_rebounds || 0).toFixed(2)}</td>
-                    <td>${parseFloat(player.total_assists || 0).toFixed(2)}</td>
-                    <td>${parseFloat(player.total_steals || 0).toFixed(2)}</td>
-                    <td>${parseFloat(player.total_blocks || 0).toFixed(2)}</td>
-                    <td>${(parseFloat(player.fg_percentage || 0) * 100).toFixed(2)}%</td>
-                    <td>${(parseFloat(player.three_pt_percentage || 0) * 100).toFixed(2)}%</td>
-                    <td>${(parseFloat(player.free_throw_percentage || 0) * 100).toFixed(2)}%</td>
-                    <td>${player.games_played || 0}</td>
-                    <td>${player.total_shots_made || 0}</td>
-                    <td>${parseFloat(player.avg_shot_distance || 0).toFixed(2)}</td>
+                    <td>${parseInt(player.total_points || 0).toLocaleString()}</td>
+                    <td>${player.season_points_rank}</td>
+                    <td>${player.shot_distance_rank}</td>
+                    <td>${parseInt(player.cumulative_points || 0).toLocaleString()}</td>
+                    <td>${player.rank_category}</td>
+                    <td>${parseFloat(player.avg_season_points || 0).toFixed(2)}</td>
+                    <td>${player.season_rank}</td>
                 `;
                 tableBody.appendChild(row);
             });
