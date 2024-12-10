@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Player Profile - NBA Fan Website</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">NBA Fan Website</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="search.html">Search Players</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="team.html">Teams</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="top-shooters.html">Top Shooters</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="playerPerformance.html">Player Performance</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="clutch_performance.html">Player Clutch Performance</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="shot.html">Shot Performance</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+      <h1 id="player-name">Player Name</h1>
+      <div id="player-info"></div>
+
+      <!-- Chart Section -->
+      <h2 class="text-center mt-4">Discover How [Player Name] Shines in Victories: Tracking Points, Assists, and Rebounds Across Seasons</h2>
+      <canvas id="stats-chart" width="400" height="200"></canvas>
+  </div>
+
+  <!-- Include jQuery, Chart.js, and your custom JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>

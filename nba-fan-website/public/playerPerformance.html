@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Performance</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">NBA Fan Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Search Players</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Teams</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="top-shooters.html">Top Shooters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="playerPerformance.html">Player Performance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="clutch_performance.html">Player Clutch Performance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shot.html">Shot Performance</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="container mt-4">
+        <header class="text-center">
+            <h1 class="mb-3">Player Performance Data</h1>
+            <p class="mb-4">
+                Explore the detailed performance statistics of your favorite NBA players from various seasons.
+            </p>
+        </header>
+
+        <!-- Performance Table -->
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Player Name</th>
+                        <th>Season</th>
+                        <th>College</th>
+                        <th>Country</th>
+                        <th>Total Points</th>
+                        <th>Avg Points/Game</th>
+                        <th>Offensive Rebounds</th>
+                        <th>Defensive Rebounds</th>
+                        <th>Total Assists</th>
+                        <th>Total Steals</th>
+                        <th>Total Blocks</th>
+                        <th>FG %</th>
+                        <th>3PT %</th>
+                        <th>FT %</th>
+                        <th>Games Played</th>
+                        <th>Total Shots Made</th>
+                        <th>Avg Shot Distance</th>
+                    </tr>
+                </thead>
+                <tbody id="player-data">
+                    <!-- Rows will be dynamically injected -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination mt-4">
+            <button class="btn btn-primary">Previous</button>
+            <button class="btn btn-primary">Next</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p class="mb-0">© 2024 NBA Fan Website | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/playersPerformance.js"></script>
+</body>
+</html>
