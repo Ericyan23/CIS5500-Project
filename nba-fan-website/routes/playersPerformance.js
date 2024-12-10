@@ -2,14 +2,12 @@ const express = require('express');
 const router = express.Router();
 const db = require('../db');
 
-// Get players performance
 router.get('/', async (req, res) => {
     const seasonLow = req.query.season_low || '2000-01';
     const seasonHigh = req.query.season_high || '2022-23';
     const rankCategory = req.query.rank_category || '';
 
     try {
-        // Optimized SQL query with placeholders
         const query = `
             WITH ranked_stats AS (
                 SELECT
@@ -44,14 +42,8 @@ router.get('/', async (req, res) => {
               AND ($3 = '' OR rank_category = $3)
             ORDER BY season, season_rank;
         `;
-
-        // Parameters for placeholders
         const values = [seasonLow, seasonHigh, rankCategory];
-
-        // Execute query
         const result = await db.query(query, values);
-
-        // Send response
         res.status(200).json(result.rows);
     } catch (error) {
         console.error('Error executing query:', error.message);
