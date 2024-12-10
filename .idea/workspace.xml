@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bce90b63-0bef-4270-b630-17e7bbb86a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/public/player-search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nba-fan-website/routes/playersSearch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nba-fan-website/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nba-fan-website/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nba-fan-website/public/js/playerSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/public/js/playerSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nba-fan-website/public/player-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/public/player-search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nba-fan-website/routes/playersSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/nba-fan-website/routes/playersSearch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <workItem from="1733868621408" duration="327000" />
       <workItem from="1733868949364" duration="241000" />
       <workItem from="1733869191371" duration="170000" />
-      <workItem from="1733869371191" duration="1576000" />
+      <workItem from="1733869371191" duration="2293000" />
     </task>
     <servers />
   </component>

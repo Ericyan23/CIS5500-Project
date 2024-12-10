@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const player = data.player;
         const seasons = data.seasons || [];
+        const winningSeasons = data.winningSeasons || [];
 
         const card = document.createElement('div');
         card.classList.add('player-card');
@@ -95,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         info.appendChild(playerText);
         card.appendChild(info);
 
-        // Chart
+        // Original Chart
         const chartContainer = document.createElement('div');
         chartContainer.style.marginTop = '30px';
         const canvas = document.createElement('canvas');
@@ -103,9 +104,17 @@ document.addEventListener('DOMContentLoaded', () => {
         chartContainer.appendChild(canvas);
         card.appendChild(chartContainer);
 
+        // **NEW SECOND CHART CONTAINER**
+        const secondChartContainer = document.createElement('div');
+        secondChartContainer.style.marginTop = '50px';
+        const canvas2 = document.createElement('canvas');
+        canvas2.id = 'winningStatsChart';
+        secondChartContainer.appendChild(canvas2);
+        card.appendChild(secondChartContainer);
+
         playerDetails.appendChild(card);
 
-        // Prepare chart data
+        // Prepare data for the first chart (All Stats)
         const labels = seasons.map(s => s.season);
         const ptsData = seasons.map(s => parseFloat(s.pts) || 0);
         const astData = seasons.map(s => parseFloat(s.ast) || 0);
@@ -127,6 +136,39 @@ document.addEventListener('DOMContentLoaded', () => {
                     title: {
                         display: true,
                         text: `Aggregated Stats for ${player.player_name}`
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Prepare data for the second chart (Winning Seasons Stats)
+        // We group by season and aggregate avg_points, avg_assists, avg_rebounds
+        const winningSeasonsLabels = winningSeasons.map(ws => ws.season);
+        const winningPtsData = winningSeasons.map(ws => parseFloat(ws.avg_points) || 0);
+        const winningAstData = winningSeasons.map(ws => parseFloat(ws.avg_assists) || 0);
+        const winningRebData = winningSeasons.map(ws => parseFloat(ws.avg_rebounds) || 0);
+
+        new Chart(canvas2.getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: winningSeasonsLabels,
+                datasets: [
+                    { label: 'Avg Points (Wins)', data: winningPtsData, borderColor: 'red', fill: false },
+                    { label: 'Avg Assists (Wins)', data: winningAstData, borderColor: 'blue', fill: false },
+                    { label: 'Avg Rebounds (Wins)', data: winningRebData, borderColor: 'green', fill: false },
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: `Average Stats in Winning Games by Season for ${player.player_name}`
                     }
                 },
                 scales: {
