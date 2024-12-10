@@ -5,31 +5,17 @@ const db = require('../db');
 router.get('/top-shooters', async (req, res) => {
     try {
         const query = `
-            WITH filtered_game_results AS (
-                SELECT game_id, season
-                FROM game_results
-                WHERE season BETWEEN 1819 AND 2223
-            ),
-            player_game_3P AS (
-                SELECT s.player_name, g.season, fp.total_3P, fp.total_3PA
-                FROM shots_made s
-                JOIN mv_filtered_player_stats fp ON s.game_id = fp.game_id
-                JOIN filtered_game_results g ON s.game_id = g.game_id
-            ),
-            player_season_3P AS (
-                SELECT
-                    player_name,
-                    season,
-                    SUM(total_3P) AS season_total_3P,
-                    SUM(total_3PA) AS season_total_3PA
-                FROM player_game_3P
-                GROUP BY player_name, season
-            )
-            SELECT
-                player_name,
-                season,
-                ROUND((season_total_3P * 1.0 / NULLIF(season_total_3PA, 0)) * 100, 2) AS three_point_percentage
-            FROM player_season_3P
+            WITH filtered_player_stats AS (
+            SELECT game_id, SUM("3P") AS total_3P, SUM("3PA") AS total_3PA
+            FROM player_stats
+            WHERE "3P" IS NOT NULL AND "3PA" IS NOT NULL
+            GROUP BY game_id)
+            SELECT s.player_name, g.season,
+            ROUND((SUM(fp.total_3P) * 1.0 / NULLIF(SUM(fp.total_3PA), 0)) * 100, 2) AS three_point_percentage
+            FROM shots_made s
+            JOIN filtered_player_stats fp ON s.game_id = fp.game_id
+            JOIN game_results g ON s.game_id = g.game_id
+            GROUP BY s.player_name, g.season
             ORDER BY three_point_percentage DESC
             LIMIT 10;
         `;

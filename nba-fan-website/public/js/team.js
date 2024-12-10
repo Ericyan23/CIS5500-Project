@@ -11,10 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="col-md-3 mb-3">
                         <div class="card">
                             <div class="card-body text-center">
-                                <img src="${team.logo_url}" 
-                                     alt="${team.team_abbreviation} Logo" 
-                                     class="img-fluid mb-3" 
-                                     style="max-height: 100px; object-fit: contain;">
                                 <h5 class="card-title">${team.team_abbreviation}</h5>
                                 <button class="btn btn-primary" onclick="fetchTeamStats('${team.team_abbreviation}')">View Team</button>
                             </div>
