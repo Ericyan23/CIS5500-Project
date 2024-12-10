@@ -42,8 +42,7 @@ function fetchTeamStats(team) {
                 const row = `
                     <tr>
                         <td>${stat.season}</td>
-                        <td>${stat.field_goal_percentage}%</td>
-                        <td>${stat.three_point_percentage}%</td>
+                        <td>${stat.three_pt_percentages}%</td>
                     </tr>`;
                 tableBody.append(row);
             });
