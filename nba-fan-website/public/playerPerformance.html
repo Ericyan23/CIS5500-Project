@@ -16,7 +16,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
@@ -28,7 +28,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="top-shooters.html">Top Shooters</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="playerPerformance.html">Player Performance</a>
                 </li>
                 <li class="nav-item">
@@ -46,9 +46,30 @@
         <header class="text-center">
             <h1 class="mb-3">Player Performance Data</h1>
             <p class="mb-4">
-                Explore the detailed performance statistics of your favorite NBA players from various seasons.
+                Explore detailed performance statistics of your favorite NBA players.
             </p>
         </header>
+
+        <!-- Filters -->
+        <div class="filters mb-4">
+            <form id="filter-form" class="form-inline justify-content-center">
+                <label for="season-low" class="mr-2 font-weight-bold">Season Low:</label>
+                <input type="text" id="season-low" class="form-control mr-3" placeholder="2000-01" />
+
+                <label for="season-high" class="mr-2 font-weight-bold">Season High:</label>
+                <input type="text" id="season-high" class="form-control mr-3" placeholder="2022-23" />
+
+                <label for="rank-category" class="mr-2 font-weight-bold">Rank Category:</label>
+                <select id="rank-category" class="form-control mr-3">
+                    <option value="">All</option>
+                    <option value="Top 5">Top 5</option>
+                    <option value="Top 10">Top 10</option>
+                    <option value="Others">Others</option>
+                </select>
+
+                <button type="button" id="apply-filters" class="btn btn-primary">Apply Filters</button>
+            </form>
+        </div>
 
         <!-- Performance Table -->
         <div class="table-responsive">
@@ -73,9 +94,9 @@
         </div>
 
         <!-- Pagination -->
-        <div class="pagination mt-4">
-            <button class="btn btn-primary">Previous</button>
-            <button class="btn btn-primary">Next</button>
+        <div class="pagination mt-4 text-center">
+            <button class="btn btn-primary btn-previous" disabled>Previous</button>
+            <button class="btn btn-primary btn-next" disabled>Next</button>
         </div>
     </div>
 
@@ -84,7 +105,6 @@
         <p class="mb-0">© 2024 NBA Fan Website | All Rights Reserved</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="js/playersPerformance.js"></script>
 </body>
 </html>
