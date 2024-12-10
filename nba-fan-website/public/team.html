@@ -31,9 +31,6 @@
                     <a class="nav-link" href="playerPerformance.html">Player Performance</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="clutch_performance.html">Player Clutch Performance</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="shot.html">Shot Performance</a>
                 </li>
             </ul>
@@ -49,7 +46,8 @@
             <thead>
                 <tr>
                     <th>Season</th>
-                    <th>Three-Point Attempt Rate (3PAR)</th>
+                    <th>Field Goal %</th>
+                    <th>Three Point %</th>
                 </tr>
             </thead>
             <tbody></tbody>
@@ -58,5 +56,38 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/team.js"></script>
+    <script>
+    // Fetch and display three-point percentages for all teams
+        async function fetchThreePointPercentages() {
+            try {
+                // Fetch data from the backend API
+                const response = await fetch('/api/team/three-point-percentages/all');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                // Get the table body element
+                const tableBody = document.getElementById('three-point-stats-body');
+                tableBody.innerHTML = ''; // Clear any existing rows
+
+                // Populate the table with data
+                data.forEach(row => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${row.team}</td>
+                        <td>${row.season}</td>
+                        <td>${row.three_pt_percentages.toFixed(2)}%</td>
+                    `;
+                    tableBody.appendChild(tr);
+                });
+            } catch (error) {
+                console.error('Error fetching three-point percentages:', error);
+            }
+        }
+        // Call the function when the page loads
+        document.addEventListener('DOMContentLoaded', fetchThreePointPercentages);
+    </script>
 </body>
 </html>

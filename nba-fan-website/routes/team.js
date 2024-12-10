@@ -49,11 +49,7 @@ router.get('/', async (req, res) => {
 
     try {
         const result = await db.query(query);
-        const teams = result.rows.map(team => ({
-            ...team,
-            logo_url: teamLogos[team.team_abbreviation] || "/logos/default-logo.png", // Fallback to default logo
-        }));
-        res.json(teams);
+        res.json(result.rows);
     } catch (err) {
         console.error('Error fetching teams:', err.stack);
         res.status(500).send('Server Error');
@@ -65,22 +61,14 @@ router.get('/:team', async (req, res) => {
     const { team } = req.params;
 
     const query = `
-        WITH team_average AS (
-            SELECT team, season,
-                ROUND(AVG(three_points_attempted), 2) AS avg_3pt_per_game,
-                ROUND(AVG(total_shots), 2) AS avg_total_shots_per_game
-            FROM team_shots_mv
-            GROUP BY team, season
-        ),
-        team_percentages AS (
-            SELECT team, season,
-               ROUND(((avg_3pt_per_game / NULLIF(avg_total_shots_per_game, 0)) * 100), 2) AS three_pt_percentages
-            FROM team_average
-        )
-        SELECT team, season, three_pt_percentages
-        FROM team_percentages
-        WHERE team = $1
-        ORDER BY team, season;
+        SELECT gr.season, ps.team,
+               ROUND(SUM(ps.fg) / NULLIF(SUM(ps.fga), 0) * 100, 2) AS field_goal_percentage,
+               ROUND(SUM(ps."3P") / NULLIF(SUM(ps."3PA"), 0) * 100, 2) AS three_point_percentage
+        FROM player_stats ps
+        JOIN game_results gr ON ps.game_id = gr.game_id
+        WHERE ps.team = $1
+        GROUP BY gr.season, ps.team
+        ORDER BY gr.season DESC;
     `;
 
     try {
@@ -88,6 +76,35 @@ router.get('/:team', async (req, res) => {
         res.json(result.rows);
     } catch (err) {
         console.error(`Error fetching stats for team ${team}:`, err.stack);
+        res.status(500).send('Server Error');
+    }
+});
+
+// Get three-point percentages for all teams
+router.get('/three-point-percentages/all', async (req, res) => {
+    const query = `
+        WITH team_average AS (
+            SELECT team, season,
+                   ROUND(AVG(three_points_attempted), 2) AS avg_3pt_per_game,
+                   ROUND(AVG(total_shots), 2) AS avg_total_shots_per_game
+            FROM team_shots_mv
+            GROUP BY team, season
+        ),
+        team_percentages AS (
+            SELECT team, season,
+                   ((avg_3pt_per_game / NULLIF(avg_total_shots_per_game, 0)) * 100) AS three_pt_percentages
+            FROM team_average
+        )
+        SELECT team, season, three_pt_percentages
+        FROM team_percentages
+        ORDER BY team, season;
+    `;
+
+    try {
+        const result = await db.query(query);
+        res.json(result.rows);
+    } catch (err) {
+        console.error('Error fetching three-point percentages:', err.stack);
         res.status(500).send('Server Error');
     }
 });
