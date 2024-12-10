@@ -40,20 +40,19 @@
       </div>
   </nav>
 
-<!-- Main Content -->
-<div class="container mt-4">
-  <h1 id="player-name">Player Name</h1>
-  <p id="player-info"></p>
+  <!-- Main Content -->
+  <div class="container mt-4">
+      <h1 id="player-name">Player Name</h1>
+      <div id="player-info"></div>
 
-  <!-- Player Stats -->
-  <h2>Season Stats</h2>
-  <table class="table table-striped" id="stats-table">
-    <!-- Table headers and body will be populated dynamically -->
-  </table>
-</div>
+      <!-- Chart Section -->
+      <h2 class="text-center mt-4">Discover How [Player Name] Shines in Victories: Tracking Points, Assists, and Rebounds Across Seasons</h2>
+      <canvas id="stats-chart" width="400" height="200"></canvas>
+  </div>
 
-<!-- Include jQuery and Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="js/player.js"></script>
+  <!-- Include jQuery, Chart.js, and your custom JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/player.js"></script>
 </body>
 </html>
