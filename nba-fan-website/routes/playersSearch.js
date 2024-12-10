@@ -1,7 +1,7 @@
 // routes/playersSearch.js
 const express = require('express');
 const router = express.Router();
-const db = require('../../../CIS5500-Project 2/nba-fan-website/db');
+const db = require('../db');
 
 // GET /api/players-search/suggest?q=<query>
 router.get('/suggest', async (req, res) => {
