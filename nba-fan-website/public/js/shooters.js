@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${row.zone_abb}</td>
                 <td>${row.total_shots}</td>
                 <td>${row.shooting_percentage}%</td>
-                <td>${row.clutch_shots_made}%</td>
-                <td>${row.total_clutch_shots}%</td>
+                <td>${row.clutch_shots_made}</td>
+                <td>${row.total_clutch_shots}</td>
                 <td>${row.clutch_shot_percentage}%</td>
             `;
             tableBody.appendChild(tr);
