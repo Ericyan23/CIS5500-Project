@@ -67,16 +67,34 @@ router.get('/search-shot-performance', async (req, res) => {
     console.log('Received query parameters:', { player_name, season, zone_abb })
     try {
         const query = `
-            SELECT s.player_name, r.season, s.zone_abb,
-                COUNT(*) AS total_shots,
-                ROUND((SUM(s.shot_made) * 1.0 / COUNT(*)) * 100, 2) AS shooting_percentage
+            WITH player_clutch_shots_performance AS (
+            SELECT s.player_name, s.zone_abb, g.season,
+           COUNT(s.shot_id) AS total_clutch_shots,
+           SUM(s.shot_made) AS clutch_shots_made
             FROM shots_made s
-            JOIN game_results r ON s.game_id = r.game_id
-            WHERE ($1::text IS NULL OR s.player_name ILIKE $1)
-              AND ($2::integer IS NULL OR r.season = $2::integer)
-              AND ($3::text IS NULL OR s.zone_abb = $3)
-            GROUP BY s.player_name, r.season, s.zone_abb
-            ORDER BY s.player_name, r.season, s.zone_abb;
+            JOIN game_results g ON s.game_id = g.game_id
+            WHERE s.quarter >= 4
+            GROUP BY s.player_name, s.zone_abb, g.season
+        )
+        SELECT s.player_name, 
+            r.season, 
+            s.zone_abb,
+            COUNT(*) AS total_shots,
+            ROUND((SUM(s.shot_made) * 1.0 / COUNT(*)) * 100, 2) AS shooting_percentage,
+            COALESCE(pcl.clutch_shots_made, 0) AS clutch_shots_made,
+            COALESCE(pcl.total_clutch_shots, 0) AS total_clutch_shots,
+            COALESCE(ROUND((pcl.clutch_shots_made * 1.0 / NULLIF(pcl.total_clutch_shots, 0)) * 100, 2), 0) AS clutch_shot_percentage
+        FROM shots_made s
+        JOIN game_results r ON s.game_id = r.game_id
+        LEFT JOIN player_clutch_shots_performance pcl 
+            ON s.player_name = pcl.player_name 
+            AND r.season = pcl.season 
+            AND s.zone_abb = pcl.zone_abb
+        WHERE ($1::text IS NULL OR s.player_name ILIKE $1)
+        AND ($2::integer IS NULL OR r.season = $2::integer)
+        AND ($3::text IS NULL OR s.zone_abb = $3)
+        GROUP BY s.player_name, r.season, s.zone_abb, pcl.clutch_shots_made, pcl.total_clutch_shots
+        ORDER BY s.player_name, r.season, s.zone_abb;
         `;
 
         console.log('Executing SQL query:', query);

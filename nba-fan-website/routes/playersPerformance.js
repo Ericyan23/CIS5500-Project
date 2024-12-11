@@ -16,7 +16,8 @@ router.get('/', async (req, res) => {
                     pp.total_points,
                     ROW_NUMBER() OVER (PARTITION BY pp.season ORDER BY pp.total_points DESC) AS season_points_rank,
                     RANK() OVER (PARTITION BY pp.season ORDER BY pp.avg_shot_distance DESC) AS shot_distance_rank,
-                    SUM(pp.total_points) OVER (PARTITION BY pp.season ORDER BY pp.total_points DESC) AS cumulative_points
+                    SUM(pp.total_points) OVER (PARTITION BY pp.season ORDER BY pp.total_points DESC) AS cumulative_points,
+                    pp.avg_shot_distance
                 FROM player_points_mv pp
             ),
             final_selection AS (

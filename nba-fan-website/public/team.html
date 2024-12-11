@@ -5,6 +5,8 @@
     <title>NBA Teams</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <!-- Navigation Menu -->
@@ -19,7 +21,7 @@
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="search.html">Search Players</a>
+                    <a class="nav-link" href="player-search.html">Search Players</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="team.html">Teams</a>
@@ -43,20 +45,34 @@
     <div class="container mt-4">
         <h1>NBA Teams</h1>
         <div id="teams-list" class="row"></div>
-
-        <h2 id="team-stats-title" class="mt-4"></h2>
-        <table class="table table-striped" id="team-stats-table">
-            <thead>
-                <tr>
-                    <th>Season</th>
-                    <th>Three-Point Attempt Rate (3PAR)</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document" style="max-width: 80vw;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="teamModalTitle">Team Stats</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="chart-container" style="position: relative; height:40vh; width:80vw;">
+                <canvas id="teamChart"></canvas>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Include Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/team.js"></script>
 </body>
 </html>

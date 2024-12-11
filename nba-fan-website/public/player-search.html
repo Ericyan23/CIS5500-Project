@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Player Search - NBA Fan Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/newsearch.css"/>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">NBA Fan Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="player-search.html">Search Players</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Teams</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="top-shooters.html">Top Shooters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="playerPerformance.html">Player Performance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="clutch_performance.html">Player Clutch Performance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shot.html">Shot Performance</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="container mt-4">
+    <h1 class="mb-4">Search NBA Players</h1>
+    <form id="search-form">
+        <div class="form-group position-relative">
+            <input type="text" class="form-control" id="player-search-input" placeholder="Type a player's name...">
+            <div id="autocomplete-list" class="autocomplete-items"></div>
+        </div>
+    </form>
+
+    <div id="player-details" class="mt-5"></div>
+</div>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/playerSearch.js"></script>
+</body>
+</html>
